@@ -22,7 +22,7 @@ console.log(`Basket is full?: ${isFull()}`); // testing isFull
 
 function addItem( item ){
   if ( isFull() ){
-    console.log('basket is full');
+    console.log(`basket is full, have to put ${item} back.`);
     return false;
   } else if (basket.length < maxItems) {
     basket.unshift( item );
@@ -72,4 +72,21 @@ addItem( 'corn' ); // testing isFull false outcome
 
 listItems();
 
+
+function removeItem( item ){
+  if ( item != basket[basket.indexOf(item)] ){
+    return discard = null;
+    } else {
+      let discard = basket.splice( basket.indexOf(item), 1);
+      return discard;
+    }
+} // end removeItems
+
 console.log(`Basket contents: ${basket}`);
+
+console.log( 'I dont need', removeItem( 'beef' ), 'anymore' );
+
+console.log(`Basket contents: ${basket}`);
+
+
+console.log( removeItem( 'chips' ) ); // testing removeItem null return
