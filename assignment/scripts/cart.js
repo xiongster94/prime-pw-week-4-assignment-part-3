@@ -62,11 +62,14 @@ empty();
 console.log(`Basket contents: ${basket}`);    // testing empty
 
 
-addItem( 'beef');
-addItem( 'chicken');
-addItem( 'fish');
-addItem( 'pork');
-addItem( 'beans');
-addItem( 'corn'); // testing isFull false outcome
+console.log( 'Forgot to buy other groceries.' );
+addItem( 'beef' );
+addItem( 'chicken' );
+addItem( 'fish' );
+addItem( 'pork' );
+addItem( 'beans' );
+addItem( 'corn' ); // testing isFull false outcome
+
+listItems();
 
 console.log(`Basket contents: ${basket}`);
